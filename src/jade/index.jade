@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title RSS Reader
+		meta(charset='utf-8')
+		link(rel='stylesheet', href='css/style.css')
+		script(src='js/Chart.js')
+	body
+		.layer_wrap
+			.stats
+				.stats_container
+					.title Stats
+						span.stats_button#stats_close Close
+					.separator
+					.stats_data#stats_channels
+					.stats_data#stats_authors
+					.stats_data#stats_messages
+					.stats_data#stats_chart
+		.content
+			.content_box
+				.title Channels
+				.separator
+				.data
+					div.add_channel
+						input(type='text', placeholder='URL')#new_channel
+						input(type='button', value='Add')#add_channel
+					.separator
+					ul#channels
+			.content_box
+				.title Messages
+				.separator
+				.data
+					ul#messages
+						.data_placeholder Choose channel
+			.content_box
+				.title Current message
+					span.stats_button#stats_show Show stats
+				.separator
+				.data#current_message
+					.data_placeholder Choose message
+		script(src='js/app.js')

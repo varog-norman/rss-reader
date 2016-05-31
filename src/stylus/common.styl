@@ -1,0 +1,232 @@
+*
+	margin 0
+	padding 0
+	font-family Open Sans, Helvetica Neue, sans-serif
+	font-size 14px
+	line-height 20px
+	font-weight 400
+	
+html
+	margin-left calc(100vw - 100%)
+    margin-right 0
+	
+body
+	background-color #F1F2F4
+	
+li
+	list-style none
+	
+a 
+	color #33567f
+	text-decoration none
+	
+	&:hover
+		text-decoration underline
+	
+.content
+	position relative
+	width 1260px
+	min-height 300px
+	padding 0 10px
+	margin-top 50px
+	margin 50px auto
+	box-sizing border-box
+	
+	&_box
+		float left
+		width 300px
+		margin 0 5px
+		margin-bottom 50px
+		min-height 300px
+		color #444
+		background-color #fff
+		border-radius 2px
+		box-shadow 0 1px 2px #ccc
+		box-sizing border-box
+		
+		&:nth-child(3)
+			width 610px
+			
+		&:first-child
+			
+			.wrapper
+				padding-right 35px
+		
+.title
+	height 50px
+	font-size 1.2rem
+	line-height 50px
+	text-align center
+	box-sizing border-box
+	
+.data
+	min-height 400px
+	padding 10px 10px
+	box-sizing border-box
+	
+.separator
+	width 100%
+	height 1px
+	border-bottom 1px solid #F1F2F4
+	margin-bottom 15px
+	
+.add_channel
+	margin-bottom 25px
+		
+	input[type='text']
+		width 226px
+		height 30px
+		color #444
+		background none
+		border none
+		border 1px solid #ccc
+		padding 0 5px
+		box-sizing border-box
+		transition-duration 0.1s
+		transition-timing-function linear
+		
+		&:focus
+			box-shadow: 0 0 2px #ccc;
+	
+	input[type='button']
+		width 50px
+		height 30px
+		background none
+		border none
+		box-sizing border-box
+		border 1px solid #ccc
+		color #aaa
+		padding 0 5px
+		
+		&:hover
+			cursor pointer
+			color #777
+
+		&:active
+			box-shadow: 0 0 2px #ccc;
+			border 1px solid #777
+			color #777
+			
+.wrapper
+	position relative 
+	padding 5px 10px
+	margin 0 -10px
+	
+	&:hover
+		cursor pointer
+		background-color #F1F2F4
+	
+		.remove
+			display block
+	
+	&:last-child
+		margin-bottom 10px
+		
+.remove
+	display none
+	position absolute
+	top 5px
+	right 10px
+	width 20px
+	height 20px
+	text-align center
+	color #aaa
+	font-style normal
+	
+	&:hover
+		background-color #e74c3c
+		color #fff
+		
+.current_channel
+	text-decoration underline
+	font-style italic
+	background-color #F1F2F4
+	
+.current_message
+	text-decoration underline
+	font-style italic
+	background-color #F1F2F4
+	
+.data_placeholder
+	position relative
+	margin-top 100px
+	text-align center
+	font-size 2rem
+	line-height 4rem
+	font-weight bold
+	color #9AB2CB
+	opacity 0.4
+	
+.pub_date
+	font-size 0.9rem
+	color #999
+	text-align left
+	margin-bottom 10px
+
+.image 
+	position relative
+	left 50%
+	margin 10px 0
+	transform translateX(-50%)
+	
+.text 
+	float none
+	margin 10px 0 10px 0
+	
+	&_title
+		font-size 1.15rem
+		line-height 1.2rem
+		margin 20px 0 20px 0
+		text-align center
+	
+.stats_button
+	position absolute
+	right 30px
+	line-height 50px
+	color #999
+	
+	&:hover
+		cursor pointer
+		color #33567f
+		text-decoration underline
+		
+.layer_wrap
+	display none
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background-image url(../images/layer_black.png)
+	z-index 999
+	overflow auto
+	cursor pointer
+	
+.stats
+	width 600px
+	height 100%
+	margin 0 auto
+	cursor auto
+		
+	&_container
+		position relative
+		width 600px
+		min-height 100px
+		margin 50px 0
+		padding 10px
+		color #444
+		background-color #fff
+		border-radius 2px
+		box-shadow 0 1px 2px #333
+		box-sizing border-box
+		
+	&_data
+		margin-bottom 15px
+		text-align center
+
+@media screen and (min-width: 960px)
+	html
+	    margin-left calc(100vw - 100%)
+	    margin-right 0
+    body
+		background-color #F1F2F4

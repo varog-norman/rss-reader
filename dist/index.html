@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSS Reader</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Chart.js"></script>
+  </head>
+  <body>
+    <div class="layer_wrap">
+      <div class="stats">
+        <div class="stats_container">
+          <div class="title">Stats<span id="stats_close" class="stats_button">Close</span></div>
+          <div class="separator"></div>
+          <div id="stats_channels" class="stats_data"></div>
+          <div id="stats_authors" class="stats_data"></div>
+          <div id="stats_messages" class="stats_data"></div>
+          <div id="stats_chart" class="stats_data"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_box">
+        <div class="title">Channels</div>
+        <div class="separator"></div>
+        <div class="data">
+          <div class="add_channel">
+            <input type="text" placeholder="URL" id="new_channel">
+            <input type="button" value="Add" id="add_channel">
+          </div>
+          <div class="separator"></div>
+          <ul id="channels"></ul>
+        </div>
+      </div>
+      <div class="content_box">
+        <div class="title">Messages</div>
+        <div class="separator"></div>
+        <div class="data">
+          <ul id="messages">
+            <div class="data_placeholder">Choose channel</div>
+          </ul>
+        </div>
+      </div>
+      <div class="content_box">
+        <div class="title">Current message<span id="stats_show" class="stats_button">Show stats</span></div>
+        <div class="separator"></div>
+        <div id="current_message" class="data">
+          <div class="data_placeholder">Choose message</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
